@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #ECECE7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecto.RegisterController">
+   <children>
+      <Label layoutX="307.0" layoutY="167.0" text="choose username:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="214.0" layoutY="187.0" prefHeight="26.0" prefWidth="290.0" promptText="choose an username" />
+      <Label layoutX="308.0" layoutY="223.0" prefHeight="19.0" prefWidth="105.0" text="choose password:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="setPasswordField" alignment="CENTER" layoutX="215.0" layoutY="243.0" prefHeight="26.0" prefWidth="290.0" promptText="choose a password" />
+      <PasswordField fx:id="confirmPasswordField" alignment="CENTER" layoutX="215.0" layoutY="297.0" prefHeight="26.0" prefWidth="290.0" promptText="make sure your passwords match" />
+      <Label layoutX="308.0" layoutY="277.0" text="confirm password:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="275.0" layoutY="330.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #006400;" text="Register" textFill="WHITE" />
+      <Button fx:id="closeButton" layoutX="275.0" layoutY="364.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #006400;" text="Cancel" textFill="WHITE" />
+      <AnchorPane layoutY="-5.0" prefHeight="410.0" prefWidth="201.0">
+         <children>
+            <ImageView fx:id="vynImageView" fitHeight="147.0" fitWidth="147.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../ImagesR/vinyls.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="movieImageView" fitHeight="147.0" fitWidth="152.0" layoutX="27.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../ImagesR/posters.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="80.0" layoutY="172.0" text="THE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="188.0" text="DIGITAL">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="205.0" text="LIBRARY">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="bookImageView" fitHeight="147.0" fitWidth="147.0" layoutX="354.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../ImagesR/collection.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="230.0" prefHeight="18.0" prefWidth="60.0" text="SAVE ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="14.0" prefHeight="46.0" prefWidth="94.0" text="HERE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="51.0" text="YOUR">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="95.0" text="BOOKS">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="212.0" layoutY="68.0" text="MUSIC">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="126.0" text="&amp;MOVIES">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="conclusionMessage" alignment="CENTER" layoutX="249.0" layoutY="390.0" prefHeight="18.0" prefWidth="202.0" text="SUCCESSFUL REGISTRATION!" textFill="#004dff" />
+      <Label fx:id="matchingMessage" alignment="CENTER" layoutX="421.0" layoutY="278.0" prefHeight="18.0" prefWidth="94.0" text="NOT MATCHING!" textFill="RED" />
+   </children>
+</AnchorPane>
